@@ -9,6 +9,8 @@ public class UserController {
     private UserService userService = new UserServiceImpl();
 
     public int addUser(User user){
-        return userService.addUser();
+        System.out.println("UserController.addUser 调用了业务层的新增用户方法");
+        return userService.addUser(user);
     }
+
 }

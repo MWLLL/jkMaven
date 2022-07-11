@@ -1,4 +1,7 @@
 package com.jd1901;
 
-public class UserDao {
+import com.jd1901.bean.User;
+
+public interface UserDao {
+    public int addUser(User user);
 }
